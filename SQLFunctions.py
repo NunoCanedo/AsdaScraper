@@ -14,9 +14,9 @@ def sql_save_taxonomy(table_name, tree_data):
     ## Define parametrs to connect python to MYSQL
 
     db = mysql.connector.connect(
-        host = 'localhost',
-        user = 'root',
-        passwd = '1001',
+        host = 'localhost',    ## IN MY CASE IS A LOCAL DATABASE
+        user = 'YourUserName',    ##INPUT YOUR OWN USERNAME
+        passwd = 'YourPasswor',    ## INPUT YOUR OWN PASSWORD
         database = 'SuperMarketScraper'
     )
     
@@ -45,12 +45,12 @@ def sql_save_taxonomy(table_name, tree_data):
       
 def save_taxonomy(table_name, csv_file):
     
-    
+
     db = mysql.connector.connect(
-    host = 'localhost',
-    user = 'root',
-    passwd = '1001',
-    database = 'SuperMarketScraper'
+        host = 'localhost',    ## IN MY CASE IS A LOCAL DATABASE
+        user = 'YourUserName',    ##INPUT YOUR OWN USERNAME
+        passwd = 'YourPasswor',    ## INPUT YOUR OWN PASSWORD
+        database = 'SuperMarketScraper'
     )
     
     mycursor = db.cursor()
@@ -81,9 +81,9 @@ def save_taxonomy(table_name, csv_file):
 def insert_values(product_data, table_name):
 
     db = mysql.connector.connect(
-        host = 'localhost',
-        user = 'root',
-        passwd = '1001',
+        host = 'localhost',    ## IN MY CASE IS A LOCAL DATABASE
+        user = 'YourUserName',    ##INPUT YOUR OWN USERNAME
+        passwd = 'YourPasswor',    ## INPUT YOUR OWN PASSWORD
         database = 'SuperMarketScraper'
     )
 
